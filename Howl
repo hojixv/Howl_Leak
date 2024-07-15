@@ -1,4 +1,5 @@
 --[[ Hi, This script is insanely Skidded From Delusions old Source, Which this will be the offical leak of "Howl" shitty script made by Garabge Skides, All Creds - 
+
 discord.gg/Bindlua
 discord.gg/Vin9 
 
@@ -236,7 +237,7 @@ Client.Character.ChildAdded:Connect(function(child)
         child.Activated:Connect(function()
             if Plr and Plr.Character then
                 local Position = Plr.Character.Humanoid:GetState() == Enum.HumanoidStateType.Freefall and Plr.Character[getgenv().Howl.Aimbot.TargetPart].Position + Vector3.new(0, getgenv().Howl.Aimbot.JumpOffset, 0) or Plr.Character[getgenv().Howl.Aimbot.TargetPart].Position
-                if not CheckAnti(Plr) then
+                if game.PlaceId == 2788229376 or game.PlaceId == 7213786345 or game.PlaceId == 16033173781 or game.PlaceId == 16158576873 then 
                     mainevent:FireServer("UpdateMousePosI", Position + ((Plr.Character.HumanoidRootPart.Velocity) * getgenv().Howl.Aimbot.Prediction))
                 else
                     mainevent:FireServer("UpdateMousePos", Position + ((Plr.Character.Humanoid.MoveDirection * Plr.Character.Humanoid.WalkSpeed) * getgenv().Howl.Aimbot.Prediction))
@@ -252,7 +253,7 @@ Client.CharacterAdded:Connect(function(character)
             child.Activated:Connect(function()
                 if Plr and Plr.Character then
                     local Position = Plr.Character.Humanoid:GetState() == Enum.HumanoidStateType.Freefall and Plr.Character[getgenv().Howl.Aimbot.TargetPart].Position + Vector3.new(0, getgenv().Howl.Aimbot.JumpOffset, 0) or Plr.Character[getgenv().Howl.Aimbot.TargetPart].Position
-                    if not CheckAnti(Plr) then
+                    if game.PlaceId == 2788229376 or game.PlaceId == 7213786345 or game.PlaceId == 16033173781 or game.PlaceId == 16158576873 then 
                         mainevent:FireServer("UpdateMousePosI", Position + ((Plr.Character.HumanoidRootPart.Velocity) * getgenv().Howl.Aimbot.Prediction))
                     else
                         mainevent:FireServer("UpdateMousePos", Position + ((Plr.Character.Humanoid.MoveDirection * Plr.Character.Humanoid.WalkSpeed) * getgenv().Howl.Aimbot.Prediction))
